@@ -32,14 +32,15 @@ def stacked_predict(sample, threshold=0.7):
 
 
 st.title("Pan-Cancer Detection & Subtype Classification")
-
+st.write("Alina Liu & Michael Manganel, 2025")
 st.write("""
 Upload an Excel file (`.xlsx`) with your samples.
-- Columns must match the 30 features used for training.
-- Optionally include a 'label' column for evaluation.
+- Columns must match the 30 biomarker panel below
+    - Gene Names: A1BG, ACTR1A, ADAM10, APMAP	APOA4	, CCT4, CD47, CDC42, EEF1D, EEF1G, EHD3, F11R, FERMT3, FLOT1, GNB2, GNG5, GPX1, ITGB2, KPNB1, MDH1, NAPA, PDCD6IP, RAB7A, RAP2B, RP2, SDPR, SERPINB1, SLC44A1, SLC4A1, ZYX 
+    - Protein IDs: P04217, P61163, O14672, Q9HDC9, P06727, P50991, Q09722, P60953, P29692, P26641, Q9NZN3, Q9Y624, Q86UX7, O75955, P62879, P63218, P07203, P05107, Q14974, P40925, P54920, Q8WUM4, P51149, P61225, O75695, Q15582, P30740, Q8WWI5, P02730, Q15942
 """)
 
-st.write("From Alina Liu & Michael Manganel, 2025 SERP")
+
 
 uploaded_file = st.file_uploader("Choose Excel file", type="xlsx")
 
